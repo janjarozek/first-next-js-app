@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React, { Component } from 'react'
 
 export default class About extends Component {
@@ -10,7 +11,10 @@ export default class About extends Component {
     render() {
         return (
             <div>
-                Hello Mr, {this.state.name}
+                <Link href="/">
+                    Go back Home
+                </Link>
+                <p>Hello Mr, {this.state.name}</p>
             </div>
         )
     }
